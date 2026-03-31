@@ -1,2 +1,2 @@
 # Sonar_GEI
-triggering Sonar
+ triggering Sonar
