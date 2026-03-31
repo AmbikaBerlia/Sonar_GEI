@@ -1,9 +1,10 @@
-name: SonarCloud Scan
+name: SonarCloud
 
 on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   sonar:
@@ -12,8 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
